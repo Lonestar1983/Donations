@@ -1,0 +1,22 @@
+/* Evo Donations: theme-neutral forms, progress, supporters and admin transactions. */
+.ed-donations{--ed-accent:var(--primary-color,#2586c7);box-sizing:border-box;line-height:1.6;min-width:0}
+.ed-donations *{box-sizing:border-box}.ed-donations p{margin:0 0 1rem}.ed-donations h2,.ed-donations h3{margin:0 0 1rem}
+.ed-summary{margin-bottom:1.5rem}.ed-summary progress{display:block;width:100%;height:1.1rem;accent-color:var(--ed-accent)}
+.ed-summary ul{list-style:none;padding:0;margin:0}.ed-summary li{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.65rem 0;border-bottom:1px solid #8884}.ed-summary li:last-child{border:0}
+.ed-form{display:grid;gap:1rem;max-width:42rem;margin:1rem 0 2rem}.ed-form label{display:grid;gap:.4rem}.ed-form input:not([type=checkbox]):not([type=hidden]),.ed-form select{width:100%;padding:.7rem;font:inherit;border:1px solid #8886;border-radius:.35rem;color:inherit;background:transparent}
+.ed-form .ed-check{display:flex;align-items:center;gap:.6rem}.ed-check input{width:1.1rem;height:1.1rem;flex-shrink:0}.ed-donations button{display:inline-block;padding:.7rem 1rem;border:0;border-radius:.35rem;background:var(--ed-accent);color:#fff;text-decoration:none;font:inherit;cursor:pointer;justify-self:start}
+.ed-donations a:focus-visible,.ed-donations button:focus-visible,.ed-donations input:focus-visible,.ed-donations select:focus-visible{outline:3px solid #d99e26;outline-offset:3px}.ed-notice{padding:1rem;border-left:3px solid #d99e26;background:#d99e2615}
+.ed-transaction{padding:1rem;margin:0 0 1rem;border:1px solid #8884;border-radius:.5rem}.ed-transaction dl{margin:0 0 1rem}.ed-transaction dl>div{display:grid;grid-template-columns:minmax(8rem,1fr) 3fr;gap:1rem}.ed-transaction dt{font-weight:bold}.ed-transaction dd{margin:0;overflow-wrap:anywhere}.ed-donations code{overflow-wrap:anywhere}.ed-pages{display:flex;gap:1rem}.ed-checkout{max-width:42rem;margin:10vh auto;padding:2rem;font-family:system-ui,sans-serif;background:#fff;color:#17242c;border:1px solid #ddd;border-radius:.5rem}
+@media(max-width:600px){.ed-transaction dl>div{grid-template-columns:1fr;gap:0;margin-bottom:.7rem}.ed-checkout{margin:1rem;padding:1.25rem}}
+
+/* On-page checkout dialog; separate from block and admin styles. */
+dialog.ed-payment-modal{box-sizing:border-box;width:min(92vw,480px);max-height:90vh;overflow:auto;margin:auto;padding:24px;border:1px solid #42526a;border-radius:12px;background:#fff;color:#17242c;box-shadow:0 24px 90px #0006;font:15px/1.6 system-ui,sans-serif}
+dialog.ed-payment-modal::backdrop{background:#07111bd9}
+.ed-payment-modal .ed-payment-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 16px}
+.ed-payment-modal h2{margin:0;font-size:22px;color:#17242c;background:none}
+.ed-payment-modal button.ed-payment-close{width:36px;height:36px;padding:0;border:1px solid #b6c1ce;border-radius:6px;background:#edf1f5;color:#17242c;font:24px/1 system-ui;cursor:pointer}
+.ed-payment-modal button:disabled{opacity:.45;cursor:wait}
+.ed-payment-modal .ed-payment-amount{font-size:20px;font-weight:700;margin:0 0 16px}
+.ed-payment-modal .ed-payment-status{margin:0 0 16px;color:#17242c}
+.ed-payment-modal .ed-payment-refresh{display:inline-block;padding:9px 14px;border-radius:5px;background:#2368ad;color:#fff;text-decoration:none}
+.ed-payment-modal [hidden]{display:none!important}

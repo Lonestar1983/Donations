@@ -1,0 +1,12 @@
+{
+    "id": "paypal-donations-module",
+    "name": "PayPal Donations module",
+    "type": "module",
+    "version": "1.0.0",
+    "author": "Lonestar",
+    "updates": {
+        "provider": "github",
+        "repository": "Lonestar1983/Donations",
+        "channel": "stable"
+    }
+}
